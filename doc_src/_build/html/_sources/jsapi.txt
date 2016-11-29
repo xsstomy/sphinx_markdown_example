@@ -3,7 +3,7 @@
 ## jssample 模块
 
 ```eval_rst
-.. autojs:: ../jssampe.js
+.. autojs:: ../jssample.js
     :members: ImageFile
 
 
