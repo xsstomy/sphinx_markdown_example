@@ -57,7 +57,7 @@ html:
 	if [ -d ../docs ];then rm -r ../docs; fi
 	cp -r $(BUILDDIR)/html ../docs
 	touch .nojekyll
-	cp .nojekyll ../docs
+	mv .nojekyll ../docs
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html"
 
