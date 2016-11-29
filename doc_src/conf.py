@@ -89,7 +89,7 @@ texinfo_documents = [
 #intersphinx_mapping = {'https://docs.python.org/': None}  # intersphinx
 todo_include_todos = True  # 插件todo启用
 todo_link_only=True
-url_doc_root = 'https://github.com/hsz1273327/sphinx_markdown_example/'
+url_doc_root = 'https://github.com/hsz1273327/sphinx_markdown_example/blob/master/'
 def setup(app):
     app.add_config_value('recommonmark_config', {
             'url_resolver': lambda url: url_doc_root + url,

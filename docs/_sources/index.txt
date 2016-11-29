@@ -12,7 +12,9 @@ Sample是一个测试用的模块,它实现了一个牛顿法开根的方法
 # 补充引用
 
 [sample code](sample.py)
+
 [jssample](jssample.js)
+
 [search](search.html)
 
 # TODO
