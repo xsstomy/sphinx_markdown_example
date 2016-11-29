@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sample API文档 &mdash; testsphinx bsd 文档</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     'bsd',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="testsphinx bsd 文档" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="sample-api">
+<span id="sample-api"></span><h1>Sample API文档<a class="headerlink" href="#sample-api" title="永久链接至标题">¶</a></h1>
+<div class="section" id="module-sample">
+<span id="sample"></span><span id="sample"></span><h2>sample 模块<a class="headerlink" href="#module-sample" title="永久链接至标题">¶</a></h2>
+<p>牛顿法扩展都n次方根 <span class="math">\(\sqrt[k] a\)</span> .的表达式为:
+<span class="math">\(x_{n+1} = x_n - \frac {x_n^k-a} {kx_n^{k-1}} = \frac {k-1}{k} x_n + \frac {a}{kx_n^{k-1}}\)</span></p>
+<dl class="function">
+<dt id="sample.sqrt_nt">
+<code class="descclassname">sample.</code><code class="descname">sqrt_nt</code><span class="sig-paren">(</span><em>n</em>, <em>m</em>, <em>round_=5</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sample.html#sqrt_nt"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sample.sqrt_nt" title="永久链接至目标">¶</a></dt>
+<dd><p>用法: <span class="math">\(sqrt\_nt(n,m,round) = \sqrt[m] n\)</span></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
+<li><strong>n</strong> (<em>int,float,long</em>) &#8211; <ul>
+<li>被开方的数</li>
+</ul>
+</li>
+<li><strong>m</strong> (<em>int,float,long</em>) &#8211; <ul>
+<li>开多少次方</li>
+</ul>
+</li>
+<li><strong>round</strong> (<em>int</em>) &#8211; <ul>
+<li>精度</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first">开方结果</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回类型:</th><td class="field-body"><p class="first">int,float,long</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li>TypeError - 参数类型不对时报错</li>
+<li>ValueError - 被开方参数为复数时报错</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sqrt_nt</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">round_</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">1.41</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">內容目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sample API文档</a><ul>
+<li><a class="reference internal" href="#module-sample">sample 模块</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/APIdoc.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜索</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="转向" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    输入相关的术语，模块，类或者函数名称进行搜索
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, hsz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/APIdoc.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

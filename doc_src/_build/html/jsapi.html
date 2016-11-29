@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>jssample API文档 &mdash; testsphinx bsd 文档</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     'bsd',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="testsphinx bsd 文档" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="jssample-api">
+<span id="jssample-api"></span><h1>jssample API文档<a class="headerlink" href="#jssample-api" title="永久链接至标题">¶</a></h1>
+<div class="section" id="jssample">
+<span id="jssample"></span><h2>jssample 模块<a class="headerlink" href="#jssample" title="永久链接至标题">¶</a></h2>
+<dl class="class">
+<dt id="ImageFile">
+<em class="property">class </em><code class="descname">ImageFile</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#ImageFile" title="永久链接至目标">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Parameters:</dt>
+<dd>url (string): 我</dd>
+<dt>A container for an image file.</dt>
+<dd><div class="first last highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">var</span> <span class="n">img</span> <span class="o">=</span> <span class="n">new</span> <span class="n">ImageFile</span><span class="p">(</span> <span class="s2">&quot;_static/jdoctest.png&quot;</span> <span class="p">);</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">img</span><span class="o">.</span><span class="n">url</span><span class="p">;</span>
+<span class="go">&#39;_static/jdoctest.png&#39;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ImageFile.prototype.fetchData">
+<code class="descname">fetchData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ImageFile.prototype.fetchData" title="永久链接至目标">¶</a></dt>
+<dd><p>Request to the server to get data of this image file. When the
+request done we can get <code class="docutils literal"><span class="pre">size</span></code> or <code class="docutils literal"><span class="pre">modified</span></code> attribute.</p>
+<div class="highlight-jscon"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt;</span> <span class="nx">img</span><span class="p">.</span><span class="nx">fetchData</span><span class="p">();</span>
+<span class="gp">&gt;&gt;&gt;</span> <span class="nx">wait</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">img</span><span class="p">.</span><span class="nx">data</span><span class="p">;</span> <span class="p">});</span>
+<span class="gp">&gt;&gt;&gt;</span> <span class="nx">img</span><span class="p">.</span><span class="nx">size</span><span class="p">;</span>
+<span class="go">21618</span>
+<span class="gp">&gt;&gt;&gt;</span> <span class="nx">img</span><span class="p">.</span><span class="nx">modified</span><span class="p">;</span> <span class="c1">//doctest: +SKIP</span>
+<span class="go">Sat Sep 25 2010 19:57:47 GMT+0900 (KST)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">內容目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">jssample API文档</a><ul>
+<li><a class="reference internal" href="#jssample">jssample 模块</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/jsapi.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜索</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="转向" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    输入相关的术语，模块，类或者函数名称进行搜索
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, hsz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/jsapi.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
